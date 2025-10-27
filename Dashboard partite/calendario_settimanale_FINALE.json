@@ -9,7 +9,7 @@
         "ora": "21.00",
         "casa": "CEM TORRICELLI",
         "ospite": "POLISPORTIVA CARUGATE",
-        "campo": "ITC VERRI 1 PIANO",
+        "campo": "ITC VERRI 1'' PIANO",
         "localita": "MILANO - VIA LATTANZIO"
       },
       {
@@ -64,7 +64,7 @@
         "ora": "21.00",
         "casa": "GEAS VOLLEY ASD",
         "ospite": "POLISPORTIVA CARUGATE",
-        "campo": "SCUOLA EL. MARTIRI DELLA LIBERTA",
+        "campo": "SCUOLA EL. MARTIRI DELLA LIBERTA''",
         "localita": "SESTO SAN GIOVANNI - VIA FIORANI (DI FRONTE AL CIVICO 93)"
       }
     ]
@@ -89,7 +89,7 @@
         "ora": "21.00",
         "casa": "BOLLATE VOLLEY",
         "ospite": "AVIS CERNUSCO BIANCA",
-        "campo": "PALAZZETTO DELLO SPORT CARLO GALIMBERTI",
+        "campo": "PALAZZETTO DELLO SPORT 'CARLO GALIMBERTI'",
         "localita": "BOLLATE - VIA VARALLI"
       },
       {
@@ -163,16 +163,6 @@
         "localita": "SEGRATE - VIA SAN ROCCO"
       },
       {
-        "squadra": "Polisportiva Carugate",
-        "data": "2025-11-28",
-        "giorno": "Friday",
-        "ora": "21.15",
-        "casa": "CITTA DI OPERA",
-        "ospite": "POLISPORTIVA CARUGATE",
-        "campo": "PALESTRA COMUNALE OPERA",
-        "localita": "OPERA - VIA DANTE ALIGHIERI"
-      },
-      {
         "squadra": "Avis Cernusco",
         "data": "2025-11-28",
         "giorno": "Friday",
@@ -181,6 +171,16 @@
         "ospite": "AVIS CERNUSCO BIANCA",
         "campo": "S.E. DI LUCERNATE",
         "localita": "RHO - LUCERNATE - VIA GIULIO CESARE - INGRESSO VIA VERBAN"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2025-11-28",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "CITTA' DI OPERA",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "PALESTRA COMUNALE OPERA",
+        "localita": "OPERA - VIA DANTE ALIGHIERI"
       }
     ]
   },
@@ -195,7 +195,7 @@
         "casa": "POLISPORTIVA CARUGATE",
         "ospite": "PIZZAUT PALLAVOLO CASSINA ROSSA",
         "campo": "PALESTRA SCUOLE MEDIE CLEMENTE BARONI NUOVA",
-        "localita": "CARUGATE - VIA S. FRANCESCO D ASSISI (ANGOLO VIA FIDELINA)"
+        "localita": "CARUGATE - VIA S. FRANCESCO D'ASSISI (ANGOLO VIA FIDELINA"
       },
       {
         "squadra": "Avis Cernusco",
@@ -227,10 +227,10 @@
         "data": "2025-12-09",
         "giorno": "Tuesday",
         "ora": "21.15",
-        "casa": "VOLLEY BARZANO",
+        "casa": "VOLLEY BARZANO'",
         "ospite": "AVIS CERNUSCO BIANCA",
         "campo": "CENTRO SPORTIVO PAOLO VI",
-        "localita": "BARZANO - VIA GIOVANNI PAOLO XXIII"
+        "localita": "BARZANO' - VIA GIOVANNI PAOLO XXIII"
       },
       {
         "squadra": "ASD Zeronove",
@@ -343,16 +343,6 @@
     "settimana": "2026-W04",
     "partite": [
       {
-        "squadra": "Avis Cernusco",
-        "data": "2026-01-22",
-        "giorno": "Thursday",
-        "ora": "21.15",
-        "casa": "UNION VOLLEY MARIANO",
-        "ospite": "AVIS CERNUSCO BIANCA",
-        "campo": "PALAZZETTO DELLO SPORT",
-        "localita": "MARIANO COMENSE - VIA SANT ANTONIO DA PADONA"
-      },
-      {
         "squadra": "ASD Zeronove",
         "data": "2026-01-22",
         "giorno": "Thursday",
@@ -361,6 +351,16 @@
         "ospite": "GONZAGA YOUNG",
         "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
         "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-01-22",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "UNION VOLLEY MARIANO",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "PALAZZETTO DELLO SPORT",
+        "localita": "MARIANO COMENSE - VIA SANT'ANTONIO DA PADONA"
       },
       {
         "squadra": "Polisportiva Carugate",
@@ -388,6 +388,16 @@
         "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
       },
       {
+        "squadra": "ASD Zeronove",
+        "data": "2026-01-30",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "CITTA' DI OPERA",
+        "ospite": "ASD ZERONOVE",
+        "campo": "PALESTRA COMUNALE OPERA",
+        "localita": "OPERA - VIA DANTE ALIGHIERI"
+      },
+      {
         "squadra": "Polisportiva Carugate",
         "data": "2026-01-30",
         "giorno": "Friday",
@@ -396,16 +406,6 @@
         "ospite": "ASD ASS. GENITORI SCUOLE",
         "campo": "SCUOLA ELEMENTARE NUOVA",
         "localita": "CARUGATE - VIA DEL GINESTRINO"
-      },
-      {
-        "squadra": "ASD Zeronove",
-        "data": "2026-01-30",
-        "giorno": "Friday",
-        "ora": "21.15",
-        "casa": "CITTA DI OPERA",
-        "ospite": "ASD ZERONOVE",
-        "campo": "PALESTRA COMUNALE OPERA",
-        "localita": "OPERA - VIA DANTE ALIGHIERI"
       }
     ]
   },
@@ -448,16 +448,6 @@
     "settimana": "2026-W07",
     "partite": [
       {
-        "squadra": "Avis Cernusco",
-        "data": "2026-02-12",
-        "giorno": "Thursday",
-        "ora": "21.15",
-        "casa": "AVIS CERNUSCO BIANCA",
-        "ospite": "AD ASTRA ASD - DRACO",
-        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
-        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
-      },
-      {
         "squadra": "ASD Zeronove",
         "data": "2026-02-12",
         "giorno": "Thursday",
@@ -466,6 +456,16 @@
         "ospite": "O.F.I.",
         "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
         "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-02-12",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "AD ASTRA ASD - DRACO",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
       },
       {
         "squadra": "Polisportiva Carugate",
@@ -490,17 +490,7 @@
         "casa": "A.S.D. NEW VOLLEY ADDA",
         "ospite": "ASD ZERONOVE",
         "campo": "PALAZZETTO SANSONA",
-        "localita": "CASSANO D ADDA - VIA PAPA GIOVANNI XXIII"
-      },
-      {
-        "squadra": "Polisportiva Carugate",
-        "data": "2026-02-20",
-        "giorno": "Friday",
-        "ora": "21.15",
-        "casa": "POLISPORTIVA CARUGATE",
-        "ospite": "GEAS VOLLEY ASD",
-        "campo": "SCUOLA ELEMENTARE NUOVA",
-        "localita": "CARUGATE - VIA DEL GINESTRINO"
+        "localita": "CASSANO D'ADDA - VIA PAPA GIOVANNI XXIII"
       },
       {
         "squadra": "Avis Cernusco",
@@ -511,6 +501,16 @@
         "ospite": "AVIS CERNUSCO BIANCA",
         "campo": "TENSOSTRUTTURA BRESSO",
         "localita": "BRESSO - VIA DON MINZONI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-02-20",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "GEAS VOLLEY ASD",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
       }
     ]
   },
@@ -534,7 +534,7 @@
         "ora": "21.00",
         "casa": "GEAS VOLLEY ASD",
         "ospite": "ASD ZERONOVE",
-        "campo": "SCUOLA EL. MARTIRI DELLA LIBERTA",
+        "campo": "SCUOLA EL. MARTIRI DELLA LIBERTA''",
         "localita": "SESTO SAN GIOVANNI - VIA FIORANI (DI FRONTE AL CIVICO 93)"
       },
       {
@@ -563,16 +563,6 @@
         "localita": "SEGRATE - VIA SAN ROCCO"
       },
       {
-        "squadra": "Polisportiva Carugate",
-        "data": "2026-03-06",
-        "giorno": "Friday",
-        "ora": "21.15",
-        "casa": "GONZAGA YOUNG",
-        "ospite": "POLISPORTIVA CARUGATE",
-        "campo": "CENTRO SPORTIVO CRESPI",
-        "localita": "MILANO - VIA VALVASSORI PERONI"
-      },
-      {
         "squadra": "Avis Cernusco",
         "data": "2026-03-06",
         "giorno": "Friday",
@@ -581,6 +571,16 @@
         "ospite": "AVIS CERNUSCO BIANCA",
         "campo": "PALAZZO SPORT",
         "localita": "COLOGNO MONZESE - VIA VOLTA"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-03-06",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "GONZAGA YOUNG",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "CENTRO SPORTIVO CRESPI",
+        "localita": "MILANO - VIA VALVASSORI PERONI"
       }
     ]
   },
@@ -613,7 +613,7 @@
         "giorno": "Friday",
         "ora": "21.15",
         "casa": "POLISPORTIVA CARUGATE",
-        "ospite": "CITTA DI OPERA",
+        "ospite": "CITTA' DI OPERA",
         "campo": "SCUOLA ELEMENTARE NUOVA",
         "localita": "CARUGATE - VIA DEL GINESTRINO"
       }
@@ -633,16 +633,6 @@
         "localita": "SEGRATE - VIA SAN ROCCO"
       },
       {
-        "squadra": "Polisportiva Carugate",
-        "data": "2026-03-20",
-        "giorno": "Friday",
-        "ora": "21.15",
-        "casa": "PIZZAUT PALLAVOLO CASSINA ROSSA",
-        "ospite": "POLISPORTIVA CARUGATE",
-        "campo": "SCUOLA ELEMENTARE TRENTO",
-        "localita": "CASSINA DE PECCHI - VIA TRENTO"
-      },
-      {
         "squadra": "Avis Cernusco",
         "data": "2026-03-20",
         "giorno": "Friday",
@@ -651,6 +641,16 @@
         "ospite": "AVIS CERNUSCO BIANCA",
         "campo": "PALAZZETTO POLIFUNZIONALE ORATORIO",
         "localita": "OGGIONO - VIALE VITTORIA"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-03-20",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "PIZZAUT PALLAVOLO CASSINA ROSSA",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "SCUOLA ELEMENTARE TRENTO",
+        "localita": "CASSINA DE' PECCHI - VIA TRENTO"
       }
     ]
   },
@@ -663,7 +663,7 @@
         "giorno": "Thursday",
         "ora": "21.15",
         "casa": "AVIS CERNUSCO BIANCA",
-        "ospite": "VOLLEY BARZANO",
+        "ospite": "VOLLEY BARZANO'",
         "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
         "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
       },
@@ -693,16 +693,6 @@
     "settimana": "2026-W14",
     "partite": [
       {
-        "squadra": "Avis Cernusco",
-        "data": "2026-04-02",
-        "giorno": "Thursday",
-        "ora": "21.15",
-        "casa": "PALLAVOLO GSA",
-        "ospite": "AVIS CERNUSCO BIANCA",
-        "campo": "ITIS LEONARDO DA VINCI",
-        "localita": "CARATE BRIANZA - VIA DE GASPERI"
-      },
-      {
         "squadra": "ASD Zeronove",
         "data": "2026-04-02",
         "giorno": "Thursday",
@@ -720,7 +710,17 @@
         "casa": "A.S.D. NEW VOLLEY ADDA",
         "ospite": "POLISPORTIVA CARUGATE",
         "campo": "PALAZZETTO SANSONA",
-        "localita": "CASSANO D ADDA - VIA PAPA GIOVANNI XXIII"
+        "localita": "CASSANO D'ADDA - VIA PAPA GIOVANNI XXIII"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-04-02",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "PALLAVOLO GSA",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "ITIS LEONARDO DA VINCI",
+        "localita": "CARATE BRIANZA - VIA DE GASPERI"
       }
     ]
   },
@@ -738,7 +738,7 @@
         "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
       },
       {
-        "squadra": "Polisportiva Carugate",
+        "squadra": "ASD Zeronove",
         "data": "2026-04-10",
         "giorno": "Friday",
         "ora": "21.15",
@@ -748,7 +748,7 @@
         "localita": "CARUGATE - VIA DEL GINESTRINO"
       },
       {
-        "squadra": "ASD Zeronove",
+        "squadra": "Polisportiva Carugate",
         "data": "2026-04-10",
         "giorno": "Friday",
         "ora": "21.15",
@@ -808,16 +808,6 @@
         "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
       },
       {
-        "squadra": "Polisportiva Carugate",
-        "data": "2026-04-24",
-        "giorno": "Friday",
-        "ora": "21.15",
-        "casa": "POLISPORTIVA CARUGATE",
-        "ospite": "SSD SRL POL. SAN GIULIANO",
-        "campo": "SCUOLA ELEMENTARE NUOVA",
-        "localita": "CARUGATE - VIA DEL GINESTRINO"
-      },
-      {
         "squadra": "ASD Zeronove",
         "data": "2026-04-24",
         "giorno": "Friday",
@@ -826,6 +816,16 @@
         "ospite": "ASD ZERONOVE",
         "campo": "CENTRO SPORTIVO CRESPI",
         "localita": "MILANO - VIA VALVASSORI PERONI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-04-24",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "SSD SRL POL. SAN GIULIANO",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
       }
     ]
   },
@@ -838,7 +838,7 @@
         "giorno": "Tuesday",
         "ora": "21.00",
         "casa": "ASD ZERONOVE",
-        "ospite": "CITTA DI OPERA",
+        "ospite": "CITTA' DI OPERA",
         "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
         "localita": "SEGRATE - VIA SAN ROCCO"
       },
@@ -858,7 +858,7 @@
     "settimana": "2026-W19",
     "partite": [
       {
-        "squadra": "Polisportiva Carugate",
+        "squadra": "ASD Zeronove",
         "data": "2026-05-05",
         "giorno": "Tuesday",
         "ora": "21.00",
@@ -868,7 +868,7 @@
         "localita": "SEGRATE - VIA SAN ROCCO"
       },
       {
-        "squadra": "ASD Zeronove",
+        "squadra": "Polisportiva Carugate",
         "data": "2026-05-05",
         "giorno": "Tuesday",
         "ora": "21.00",
@@ -888,6 +888,16 @@
         "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
       },
       {
+        "squadra": "ASD Zeronove",
+        "data": "2026-05-08",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "PIZZAUT PALLAVOLO CASSINA ROSSA",
+        "ospite": "ASD ZERONOVE",
+        "campo": "SCUOLA ELEMENTARE TRENTO",
+        "localita": "CASSINA DE' PECCHI - VIA TRENTO"
+      },
+      {
         "squadra": "Polisportiva Carugate",
         "data": "2026-05-08",
         "giorno": "Friday",
@@ -896,16 +906,6 @@
         "ospite": "ASD PGS ARDOR",
         "campo": "SCUOLA ELEMENTARE NUOVA",
         "localita": "CARUGATE - VIA DEL GINESTRINO"
-      },
-      {
-        "squadra": "ASD Zeronove",
-        "data": "2026-05-08",
-        "giorno": "Friday",
-        "ora": "21.15",
-        "casa": "PIZZAUT PALLAVOLO CASSINA ROSSA",
-        "ospite": "ASD ZERONOVE",
-        "campo": "SCUOLA ELEMENTARE TRENTO",
-        "localita": "CASSINA DE PECCHI - VIA TRENTO"
       }
     ]
   }
