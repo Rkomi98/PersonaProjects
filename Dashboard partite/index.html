@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Volley 2025/26 - Avis, Zeronove, Carugate</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        :root {
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-blue-500: rgba(59, 130, 246, 1);
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --radius-base: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+  }
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+  padding: var(--space-20);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-32);
+}
+
+.header h1 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+.header p {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+}
+
+.filters {
+  display: flex;
+  gap: var(--space-16);
+  margin-bottom: var(--space-24);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.filter-group label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.filter-group select {
+  padding: var(--space-8) var(--space-12);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  min-width: 200px;
+}
+
+.view-tabs {
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-24);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.view-tab {
+  padding: var(--space-12) var(--space-20);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-tab:hover {
+  color: var(--color-text);
+}
+
+.view-tab.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.view-content {
+  display: none;
+}
+
+.view-content.active {
+  display: block;
+}
+
+.legend {
+  display: flex;
+  gap: var(--space-24);
+  margin-bottom: var(--space-24);
+  padding: var(--space-16);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-base);
+  border: 1px solid var(--color-card-border);
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+}
+
+.legend-color.avis {
+  background-color: #ffffff;
+  border: 2px solid #333;
+}
+
+.legend-color.zeronove {
+  background-color: #000000;
+}
+
+.legend-color.carugate {
+  background-color: #3b82f6;
+}
+
+/* Table View */
+.table-container {
+  overflow-x: auto;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--shadow-sm);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--color-surface);
+  border-bottom: 2px solid var(--color-border);
+}
+
+th {
+  padding: var(--space-12) var(--space-16);
+  text-align: left;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+td {
+  padding: var(--space-12) var(--space-16);
+  border-bottom: 1px solid var(--color-card-border);
+  font-size: var(--font-size-sm);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background-color: rgba(var(--color-teal-500-rgb), 0.05);
+}
+
+.overlap-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: rgba(255, 84, 89, 0.15);
+  color: #ff5459;
+}
+
+.no-overlap-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: rgba(33, 128, 141, 0.15);
+  color: var(--color-teal-500);
+}
+
+/* Calendar View */
+.calendar-container {
+  display: grid;
+  gap: var(--space-24);
+}
+
+.week-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  padding: var(--space-20);
+  box-shadow: var(--shadow-sm);
+}
+
+.week-header {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-16);
+  color: var(--color-text);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.matches-grid {
+  display: grid;
+  gap: var(--space-12);
+}
+
+.match-item {
+  padding: var(--space-12);
+  border-radius: var(--radius-base);
+  border: 1px solid var(--color-card-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.match-item.avis {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 4px solid #ffffff;
+  border-left-color: #333;
+}
+
+.match-item.zeronove {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #000000;
+}
+
+.match-item.carugate {
+  background-color: rgba(59, 130, 246, 0.08);
+  border-left: 4px solid #3b82f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  .match-item.avis {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.match-team {
+  font-weight: 600;
+  font-size: var(--font-size-base);
+}
+
+.match-date {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.match-details {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.match-vs {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+}
+
+.match-location {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Map View */
+#map {
+  height: 600px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--shadow-md);
+}
+
+.leaflet-popup-content {
+  font-family: var(--font-family-base);
+}
+
+.popup-content h3 {
+  margin: 0 0 8px 0;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+}
+
+.popup-content p {
+  margin: 4px 0;
+  font-size: var(--font-size-sm);
+}
+
+.popup-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.popup-link:hover {
+  background-color: var(--color-teal-600);
+}
+
+.no-matches {
+  text-align: center;
+  padding: var(--space-32);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-group select {
+    width: 100%;
+  }
+  
+  .view-tabs {
+    overflow-x: auto;
+  }
+  
+  #map {
+    height: 400px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Calendario Volley 2025/26</h1>
+        <p>Avis Cernusco, ASD Zeronove, Polisportiva Carugate</p>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color avis"></div>
+            <span>Avis Cernusco</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color zeronove"></div>
+            <span>ASD Zeronove</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color carugate"></div>
+            <span>Polisportiva Carugate</span>
+        </div>
+    </div>
+
+    <div class="filters">
+        <div class="filter-group">
+            <label for="team-filter">Filtra per Squadra</label>
+            <select id="team-filter">
+                <option value="all">Tutte le squadre</option>
+                <option value="avis">Avis Cernusco</option>
+                <option value="zeronove">ASD Zeronove</option>
+                <option value="carugate">Polisportiva Carugate</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="week-filter">Filtra per Settimana</label>
+            <select id="week-filter">
+                <option value="all">Tutte le settimane</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="view-tabs">
+        <button class="view-tab active" data-view="table">Tabella Settimanale</button>
+        <button class="view-tab" data-view="calendar">Calendario</button>
+        <button class="view-tab" data-view="map">Mappa</button>
+    </div>
+
+    <div id="table-view" class="view-content active">
+        <div class="table-container">
+            <table id="weekly-table">
+                <thead>
+                    <tr>
+                        <th>Settimana</th>
+                        <th>Date</th>
+                        <th>Avis Cernusco</th>
+                        <th>ASD Zeronove</th>
+                        <th>Polisportiva Carugate</th>
+                        <th>Sovrapposizioni</th>
+                    </tr>
+                </thead>
+                <tbody id="weekly-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="calendar-view" class="view-content">
+        <div class="calendar-container" id="calendar-container">
+        </div>
+    </div>
+
+    <div id="map-view" class="view-content">
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Complete dataset: 76 matches from October 2025 to May 2026
+        const matchesData = [
+            // W44 (29 ott - 2 nov 2025)
+            { squadra: 'Polisportiva Carugate', data: '2025-10-29', ora: '21:00', casa: 'CEM TORRICELLI', ospite: 'POLISPORTIVA CARUGATE', campo: 'ITC VERRI 1 PIANO', localita: 'MILANO - VIA LATTANZIO', lat: 45.4808, lng: 9.2297 },
+            { squadra: 'ASD Zeronove', data: '2025-10-30', ora: '21:15', casa: 'O.F.I.', ospite: 'ASD ZERONOVE', campo: 'PALESTRA COMUNALE', localita: 'INZAGO - VIA BRAMBILLA', lat: 45.5875, lng: 9.4633 },
+            { squadra: 'Avis Cernusco', data: '2025-10-31', ora: '21:00', casa: 'AD ASTRA ASD - DRACO', ospite: 'AVIS CERNUSCO BIANCA', campo: 'SCUOLA MEDIA BUONARROTI', localita: 'MILANO - VIA SCIALOIA', lat: 45.5051, lng: 9.2280 },
+            // W45 (5-7 nov 2025)
+            { squadra: 'ASD Zeronove', data: '2025-11-06', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'KINES SPORT MILANO', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            { squadra: 'Avis Cernusco', data: '2025-11-07', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'NUOVA UMPLA BRESSO', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2025-11-07', ora: '21:15', casa: 'POLISPORTIVA CARUGATE', ospite: 'ASD VOLLEY CINISELLO', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            // W46 (13-14 nov 2025)
+            { squadra: 'ASD Zeronove', data: '2025-11-13', ora: '21:15', casa: 'VOLLEY TEAM BRIANZA', ospite: 'ASD ZERONOVE', campo: 'SCUOLA MEDIA', localita: 'VIMERCATE - VIA LEOPARDI', lat: 45.6106, lng: 9.3694 },
+            { squadra: 'Avis Cernusco', data: '2025-11-14', ora: '21:00', casa: 'MARTESANA VOLLEY COLOGNO', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA FALCONE BORSELLINO', localita: 'COLOGNO MONZESE - VIA MANZONI', lat: 45.5326, lng: 9.2747 },
+            { squadra: 'Polisportiva Carugate', data: '2025-11-14', ora: '21:00', casa: 'GSO VILLA CORTESE', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA SCUOLA ELEMENTARE', localita: 'VILLA CORTESE - VIA ROMA', lat: 45.5828, lng: 8.8508 },
+            // W47 (20-21 nov 2025)
+            { squadra: 'ASD Zeronove', data: '2025-11-20', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'ATLETICO SAN GIULIANO', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            { squadra: 'Avis Cernusco', data: '2025-11-21', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'BOLLATE VOLLEY', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2025-11-21', ora: '21:15', casa: 'POLISPORTIVA CARUGATE', ospite: 'ASD PERO VOLLEY', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            // W48 (27-28 nov 2025)
+            { squadra: 'ASD Zeronove', data: '2025-11-27', ora: '21:15', casa: 'POL. TREZZANO', ospite: 'ASD ZERONOVE', campo: 'PALESTRA SCUOLE MEDIE', localita: 'TREZZANO SUL NAVIGLIO - VIA LIBERAZIONE', lat: 45.4258, lng: 9.0636 },
+            { squadra: 'Avis Cernusco', data: '2025-11-28', ora: '21:00', casa: 'BILLA VOLLEY MILANO U25', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA VIA ROMA', localita: 'BRESSO - VIA ROMA', lat: 45.5375, lng: 9.1881 },
+            { squadra: 'Polisportiva Carugate', data: '2025-11-28', ora: '21:00', casa: 'ASD MONZA VOLLEY', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA VIA BORGAZZI', localita: 'MONZA - VIA BORGAZZI', lat: 45.5842, lng: 9.2747 },
+            // W49 (4-5 dic 2025)
+            { squadra: 'ASD Zeronove', data: '2025-12-04', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'O.F.I.', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            { squadra: 'Avis Cernusco', data: '2025-12-05', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'VOLLEY LUCERNATE', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2025-12-05', ora: '21:15', casa: 'POLISPORTIVA CARUGATE', ospite: 'USD SESTO SAN GIOVANNI', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            // W50 (9-12 dic 2025) - CORREZIONE AVIS CERNUSCO
+            { squadra: 'Avis Cernusco', data: '2025-12-09', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'VOLLEY BARZANO', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'ASD Zeronove', data: '2025-12-11', ora: '21:15', casa: 'KINES SPORT MILANO', ospite: 'ASD ZERONOVE', campo: 'PALESTRA SCUOLA MEDIA', localita: 'MILANO - VIA DECORATI', lat: 45.4836, lng: 9.2419 },
+            { squadra: 'Polisportiva Carugate', data: '2025-12-12', ora: '21:00', casa: 'ASD VOLLEY CINISELLO', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA XXVI APRILE', localita: 'CINISELLO BALSAMO - VIA GORKI', lat: 45.5514, lng: 9.2153 },
+            // W51 (16-19 dic 2025) - CORREZIONE AVIS CERNUSCO E ZERONOVE
+            { squadra: 'Avis Cernusco', data: '2025-12-16', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'PALLAVOLO GSA', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'ASD Zeronove', data: '2025-12-17', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'CEM TORRICELLI', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            { squadra: 'Polisportiva Carugate', data: '2025-12-19', ora: '21:00', casa: 'POLISPORTIVA CARUGATE', ospite: 'GSO VILLA CORTESE', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            // W02-2026 (9 gen 2026)
+            { squadra: 'Polisportiva Carugate', data: '2026-01-09', ora: '21:00', casa: 'ASD PERO VOLLEY', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA SCUOLA MEDIA', localita: 'PERO - VIA FILZI', lat: 45.5086, lng: 9.0908 },
+            { squadra: 'Avis Cernusco', data: '2026-01-09', ora: '21:00', casa: 'A.S.D. ORATORIO OGGIONO', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA COMUNALE', localita: 'OGGIONO - VIA COLOMBO', lat: 45.6992, lng: 9.2886 },
+            { squadra: 'ASD Zeronove', data: '2026-01-09', ora: '21:15', casa: 'ATLETICO SAN GIULIANO', ospite: 'ASD ZERONOVE', campo: 'PALESTRA KENNEDY', localita: 'SAN GIULIANO MILANESE - VIA KENNEDY', lat: 45.3961, lng: 9.2847 },
+            // W03-2026 (16 gen 2026)
+            { squadra: 'Avis Cernusco', data: '2026-01-16', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'CORALYA LISSONE VOLLEY TEAM', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2026-01-16', ora: '21:00', casa: 'POLISPORTIVA CARUGATE', ospite: 'ASD MONZA VOLLEY', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            { squadra: 'ASD Zeronove', data: '2026-01-16', ora: '21:15', casa: 'ASD ZERONOVE', ospite: 'POL. TREZZANO', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            // W04-2026 (23 gen 2026)
+            { squadra: 'Polisportiva Carugate', data: '2026-01-23', ora: '21:00', casa: 'USD SESTO SAN GIOVANNI', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA BUONARROTI', localita: 'SESTO SAN GIOVANNI - VIA BUONARROTI', lat: 45.5389, lng: 9.2319 },
+            { squadra: 'Avis Cernusco', data: '2026-01-23', ora: '21:00', casa: 'REDSTAMP VOLLEY VALLE DEL LAMBRO', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA CASCINA TROCCOLI', localita: 'MERONE - VIA TROCCOLI', lat: 45.5311, lng: 9.4031 },
+            { squadra: 'ASD Zeronove', data: '2026-01-23', ora: '21:00', casa: 'O.F.I.', ospite: 'ASD ZERONOVE', campo: 'PALESTRA COMUNALE', localita: 'INZAGO - VIA BRAMBILLA', lat: 45.5875, lng: 9.4633 },
+            // W05-2026 (30 gen 2026)
+            { squadra: 'ASD Zeronove', data: '2026-01-29', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'KINES SPORT MILANO', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            { squadra: 'Avis Cernusco', data: '2026-01-30', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'UNION VOLLEY MARIANO', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2026-01-30', ora: '21:15', casa: 'POLISPORTIVA CARUGATE', ospite: 'ASD VOLLEY CINISELLO', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            // W06-2026 (6 feb 2026)
+            { squadra: 'Polisportiva Carugate', data: '2026-02-06', ora: '21:00', casa: 'POLISPORTIVA CARUGATE', ospite: 'CEM TORRICELLI', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            { squadra: 'Avis Cernusco', data: '2026-02-06', ora: '21:00', casa: 'GEAS VOLLEY ASD', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA FALCONE BORSELLINO', localita: 'COLOGNO MONZESE - VIA MANZONI', lat: 45.5326, lng: 9.2747 },
+            { squadra: 'ASD Zeronove', data: '2026-02-06', ora: '21:15', casa: 'VOLLEY TEAM BRIANZA', ospite: 'ASD ZERONOVE', campo: 'SCUOLA MEDIA', localita: 'VIMERCATE - VIA LEOPARDI', lat: 45.6106, lng: 9.3694 },
+            // W07-2026 (13 feb 2026)
+            { squadra: 'ASD Zeronove', data: '2026-02-12', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'ATLETICO SAN GIULIANO', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            { squadra: 'Avis Cernusco', data: '2026-02-13', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'AD ASTRA ASD - DRACO', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2026-02-13', ora: '21:15', casa: 'POLISPORTIVA CARUGATE', ospite: 'ASD PERO VOLLEY', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            // W08-2026 (20 feb 2026)
+            { squadra: 'Polisportiva Carugate', data: '2026-02-20', ora: '21:00', casa: 'ASD MONZA VOLLEY', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA VIA BORGAZZI', localita: 'MONZA - VIA BORGAZZI', lat: 45.5842, lng: 9.2747 },
+            { squadra: 'Avis Cernusco', data: '2026-02-20', ora: '21:00', casa: 'NUOVA UMPLA BRESSO', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA VIA ROMA', localita: 'BRESSO - VIA ROMA', lat: 45.5375, lng: 9.1881 },
+            { squadra: 'ASD Zeronove', data: '2026-02-20', ora: '21:15', casa: 'POL. TREZZANO', ospite: 'ASD ZERONOVE', campo: 'PALESTRA SCUOLE MEDIE', localita: 'TREZZANO SUL NAVIGLIO - VIA LIBERAZIONE', lat: 45.4258, lng: 9.0636 },
+            // W09-2026 (27 feb 2026)
+            { squadra: 'Avis Cernusco', data: '2026-02-27', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'MARTESANA VOLLEY COLOGNO', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2026-02-27', ora: '21:15', casa: 'POLISPORTIVA CARUGATE', ospite: 'USD SESTO SAN GIOVANNI', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            { squadra: 'ASD Zeronove', data: '2026-02-27', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'O.F.I.', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            // W10-2026 (6 mar 2026)
+            { squadra: 'ASD Zeronove', data: '2026-03-05', ora: '21:15', casa: 'KINES SPORT MILANO', ospite: 'ASD ZERONOVE', campo: 'PALESTRA SCUOLA MEDIA', localita: 'MILANO - VIA DECORATI', lat: 45.4836, lng: 9.2419 },
+            { squadra: 'Polisportiva Carugate', data: '2026-03-06', ora: '21:00', casa: 'ASD VOLLEY CINISELLO', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA XXVI APRILE', localita: 'CINISELLO BALSAMO - VIA GORKI', lat: 45.5514, lng: 9.2153 },
+            { squadra: 'Avis Cernusco', data: '2026-03-06', ora: '21:00', casa: 'BOLLATE VOLLEY', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA COMUNALE', localita: 'BOLLATE - VIA VARALLI', lat: 45.6992, lng: 9.2886 },
+            // W11-2026 (13 mar 2026)
+            { squadra: 'Avis Cernusco', data: '2026-03-13', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'BILLA VOLLEY MILANO U25', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2026-03-13', ora: '21:00', casa: 'POLISPORTIVA CARUGATE', ospite: 'GSO VILLA CORTESE', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            { squadra: 'ASD Zeronove', data: '2026-03-13', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'VOLLEY TEAM BRIANZA', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            // W12-2026 (20 mar 2026)
+            { squadra: 'Polisportiva Carugate', data: '2026-03-20', ora: '21:00', casa: 'ASD PERO VOLLEY', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA SCUOLA MEDIA', localita: 'PERO - VIA FILZI', lat: 45.5086, lng: 9.0908 },
+            { squadra: 'Avis Cernusco', data: '2026-03-20', ora: '21:00', casa: 'VOLLEY LUCERNATE', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA SCUOLA MEDIA', localita: 'LUCERNATE - VIA XXIV MAGGIO', lat: 45.4875, lng: 9.2886 },
+            { squadra: 'ASD Zeronove', data: '2026-03-20', ora: '21:15', casa: 'ATLETICO SAN GIULIANO', ospite: 'ASD ZERONOVE', campo: 'PALESTRA KENNEDY', localita: 'SAN GIULIANO MILANESE - VIA KENNEDY', lat: 45.3961, lng: 9.2847 },
+            // W13-2026 (27 mar 2026)
+            { squadra: 'Avis Cernusco', data: '2026-03-27', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'A.S.D. ORATORIO OGGIONO', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2026-03-27', ora: '21:00', casa: 'POLISPORTIVA CARUGATE', ospite: 'ASD MONZA VOLLEY', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            { squadra: 'ASD Zeronove', data: '2026-03-27', ora: '21:15', casa: 'ASD ZERONOVE', ospite: 'POL. TREZZANO', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            // W14-2026 (3 apr 2026)
+            { squadra: 'Polisportiva Carugate', data: '2026-04-03', ora: '21:00', casa: 'USD SESTO SAN GIOVANNI', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA BUONARROTI', localita: 'SESTO SAN GIOVANNI - VIA BUONARROTI', lat: 45.5389, lng: 9.2319 },
+            { squadra: 'Avis Cernusco', data: '2026-04-03', ora: '21:00', casa: 'VOLLEY BARZANO', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA CASCINA TROCCOLI', localita: 'BARZANO - VIA TROCCOLI', lat: 45.5311, lng: 9.4031 },
+            { squadra: 'ASD Zeronove', data: '2026-04-03', ora: '21:00', casa: 'O.F.I.', ospite: 'ASD ZERONOVE', campo: 'PALESTRA COMUNALE', localita: 'INZAGO - VIA BRAMBILLA', lat: 45.5875, lng: 9.4633 },
+            // W15-2026 (10 apr 2026)
+            { squadra: 'Avis Cernusco', data: '2026-04-10', ora: '21:00', casa: 'AVIS CERNUSCO BIANCA', ospite: 'PALLAVOLO GSA', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2026-04-10', ora: '21:00', casa: 'POLISPORTIVA CARUGATE', ospite: 'CEM TORRICELLI', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            { squadra: 'ASD Zeronove', data: '2026-04-10', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'KINES SPORT MILANO', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            // W16-2026 (17 apr 2026)
+            { squadra: 'ASD Zeronove', data: '2026-04-16', ora: '21:15', casa: 'VOLLEY TEAM BRIANZA', ospite: 'ASD ZERONOVE', campo: 'SCUOLA MEDIA', localita: 'VIMERCATE - VIA LEOPARDI', lat: 45.6106, lng: 9.3694 },
+            { squadra: 'Avis Cernusco', data: '2026-04-17', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'CORALYA LISSONE VOLLEY TEAM', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2026-04-17', ora: '21:15', casa: 'POLISPORTIVA CARUGATE', ospite: 'ASD VOLLEY CINISELLO', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            // W17-2026 (24 apr 2026)
+            { squadra: 'Polisportiva Carugate', data: '2026-04-24', ora: '21:00', casa: 'GSO VILLA CORTESE', ospite: 'POLISPORTIVA CARUGATE', campo: 'PALESTRA SCUOLA ELEMENTARE', localita: 'VILLA CORTESE - VIA ROMA', lat: 45.5828, lng: 8.8508 },
+            { squadra: 'Avis Cernusco', data: '2026-04-24', ora: '21:00', casa: 'REDSTAMP VOLLEY VALLE DEL LAMBRO', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA FALCONE BORSELLINO', localita: 'MERONE - VIA MANZONI', lat: 45.5326, lng: 9.2747 },
+            { squadra: 'ASD Zeronove', data: '2026-04-24', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'VOLLEY TEAM BRIANZA', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            // W18-2026 (1 mag 2026)
+            { squadra: 'ASD Zeronove', data: '2026-04-30', ora: '21:15', casa: 'ATLETICO SAN GIULIANO', ospite: 'ASD ZERONOVE', campo: 'PALESTRA KENNEDY', localita: 'SAN GIULIANO MILANESE - VIA KENNEDY', lat: 45.3961, lng: 9.2847 },
+            { squadra: 'Avis Cernusco', data: '2026-05-01', ora: '21:15', casa: 'AVIS CERNUSCO BIANCA', ospite: 'UNION VOLLEY MARIANO', campo: 'PALESTRA ALDO MORO', localita: 'CERNUSCO SUL NAVIGLIO - VIA BUONARROTI', lat: 45.5236, lng: 9.3319 },
+            { squadra: 'Polisportiva Carugate', data: '2026-05-01', ora: '21:15', casa: 'POLISPORTIVA CARUGATE', ospite: 'ASD PERO VOLLEY', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            // W19-2026 (5-8 mag 2026) - GIORNATA 9 CORRETTA
+            { squadra: 'Polisportiva Carugate', data: '2026-05-05', ora: '21:00', casa: 'POLISPORTIVA CARUGATE', ospite: 'CEM TORRICELLI', campo: 'PALESTRA COMUNALE', localita: 'CARUGATE - VIA DEL GINESTRINO', lat: 45.5542, lng: 9.3356 },
+            { squadra: 'ASD Zeronove', data: '2026-05-05', ora: '21:00', casa: 'ASD ZERONOVE', ospite: 'VOLLEY TEAM BRIANZA', campo: 'PALESTRA ZERONOVE', localita: 'SEGRATE - VIA SAN ROCCO', lat: 45.4951, lng: 9.2961 },
+            { squadra: 'Avis Cernusco', data: '2026-05-08', ora: '21:00', casa: 'GEAS VOLLEY ASD', ospite: 'AVIS CERNUSCO BIANCA', campo: 'PALESTRA VIA ROMA', localita: 'SESTO SAN GIOVANNI - VIA ROMA', lat: 45.5375, lng: 9.1881 }
+        ];
+
+        // Team configurations
+        const teams = {
+            'avis': { name: 'Avis Cernusco', color: '#ffffff', borderColor: '#333333', markerColor: 'white' },
+            'zeronove': { name: 'ASD Zeronove', color: '#000000', markerColor: 'black' },
+            'carugate': { name: 'Polisportiva Carugate', color: '#3b82f6', markerColor: 'blue' }
+        };
+
+        // Helper function to get week number
+        function getWeekNumber(date) {
+            const d = new Date(date);
+            d.setHours(0, 0, 0, 0);
+            d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+            const yearStart = new Date(d.getFullYear(), 0, 1);
+            const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+            return `${d.getFullYear()}-W${weekNo.toString().padStart(2, '0')}`;
+        }
+
+        // Helper function to get week date range
+        function getWeekDateRange(weekId) {
+            const [year, week] = weekId.split('-W');
+            const simple = new Date(year, 0, 1 + (week - 1) * 7);
+            const dow = simple.getDay();
+            const ISOweekStart = simple;
+            if (dow <= 4)
+                ISOweekStart.setDate(simple.getDate() - simple.getDay() + 1);
+            else
+                ISOweekStart.setDate(simple.getDate() + 8 - simple.getDay());
+            const weekEnd = new Date(ISOweekStart);
+            weekEnd.setDate(weekEnd.getDate() + 6);
+            return {
+                start: ISOweekStart,
+                end: weekEnd,
+                label: `${ISOweekStart.toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit' })} - ${weekEnd.toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit', year: 'numeric' })}`
+            };
+        }
+
+        // Helper function to get team key from squad name
+        function getTeamKey(squadra) {
+            if (squadra.includes('Avis') || squadra.includes('AVIS')) return 'avis';
+            if (squadra.includes('Zeronove') || squadra.includes('ZERONOVE')) return 'zeronove';
+            if (squadra.includes('Carugate') || squadra.includes('CARUGATE')) return 'carugate';
+            return null;
+        }
+
+        // Organize matches by week
+        function organizeMatchesByWeek() {
+            const weeklyData = {};
+            
+            matchesData.forEach(match => {
+                const weekId = getWeekNumber(match.data);
+                if (!weeklyData[weekId]) {
+                    weeklyData[weekId] = {
+                        matches: [],
+                        avis: [],
+                        zeronove: [],
+                        carugate: []
+                    };
+                }
+                weeklyData[weekId].matches.push(match);
+                const teamKey = getTeamKey(match.squadra);
+                if (teamKey) {
+                    weeklyData[weekId][teamKey].push(match);
+                }
+            });
+            
+            return weeklyData;
+        }
+
+        // Check for overlaps in a week
+        function checkOverlaps(weekData) {
+            const dates = {};
+            weekData.matches.forEach(match => {
+                if (!dates[match.data]) dates[match.data] = [];
+                dates[match.data].push(getTeamKey(match.squadra));
+            });
+            
+            let hasOverlap = false;
+            for (const date in dates) {
+                if (dates[date].length > 1) {
+                    hasOverlap = true;
+                    break;
+                }
+            }
+            
+            return { hasOverlap, dates };
+        }
+
+        // Populate weekly table
+        function populateWeeklyTable(filterTeam = 'all', filterWeek = 'all') {
+            const weeklyData = organizeMatchesByWeek();
+            const tableBody = document.getElementById('weekly-table-body');
+            tableBody.innerHTML = '';
+            
+            const sortedWeeks = Object.keys(weeklyData).sort();
+            
+            sortedWeeks.forEach(weekId => {
+                if (filterWeek !== 'all' && filterWeek !== weekId) return;
+                
+                const weekData = weeklyData[weekId];
+                const weekRange = getWeekDateRange(weekId);
+                const overlapInfo = checkOverlaps(weekData);
+                
+                // Apply team filter
+                let displayRow = false;
+                if (filterTeam === 'all') {
+                    displayRow = true;
+                } else if (filterTeam === 'avis' && weekData.avis.length > 0) {
+                    displayRow = true;
+                } else if (filterTeam === 'zeronove' && weekData.zeronove.length > 0) {
+                    displayRow = true;
+                } else if (filterTeam === 'carugate' && weekData.carugate.length > 0) {
+                    displayRow = true;
+                }
+                
+                if (!displayRow) return;
+                
+                const row = document.createElement('tr');
+                
+                // Week column
+                const weekCell = document.createElement('td');
+                weekCell.innerHTML = `<strong>${weekId}</strong>`;
+                row.appendChild(weekCell);
+                
+                // Dates column
+                const datesCell = document.createElement('td');
+                const uniqueDates = [...new Set(weekData.matches.map(m => m.data))].sort();
+                datesCell.textContent = uniqueDates.map(d => new Date(d).toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit' })).join(', ');
+                row.appendChild(datesCell);
+                
+                // Avis column
+                const avisCell = document.createElement('td');
+                if (weekData.avis.length > 0) {
+                    avisCell.innerHTML = `${weekData.avis.length} partita/e<br><small>${weekData.avis.map(m => new Date(m.data).toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit' })).join(', ')}</small>`;
+                } else {
+                    avisCell.innerHTML = '<span style="color: var(--color-text-secondary);">-</span>';
+                }
+                row.appendChild(avisCell);
+                
+                // Zeronove column
+                const zeronoveCell = document.createElement('td');
+                if (weekData.zeronove.length > 0) {
+                    zeronoveCell.innerHTML = `${weekData.zeronove.length} partita/e<br><small>${weekData.zeronove.map(m => new Date(m.data).toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit' })).join(', ')}</small>`;
+                } else {
+                    zeronoveCell.innerHTML = '<span style="color: var(--color-text-secondary);">-</span>';
+                }
+                row.appendChild(zeronoveCell);
+                
+                // Carugate column
+                const carugateCell = document.createElement('td');
+                if (weekData.carugate.length > 0) {
+                    carugateCell.innerHTML = `${weekData.carugate.length} partita/e<br><small>${weekData.carugate.map(m => new Date(m.data).toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit' })).join(', ')}</small>`;
+                } else {
+                    carugateCell.innerHTML = '<span style="color: var(--color-text-secondary);">-</span>';
+                }
+                row.appendChild(carugateCell);
+                
+                // Overlaps column
+                const overlapCell = document.createElement('td');
+                if (overlapInfo.hasOverlap) {
+                    overlapCell.innerHTML = '<span class="overlap-badge">Sì</span>';
+                } else {
+                    overlapCell.innerHTML = '<span class="no-overlap-badge">No</span>';
+                }
+                row.appendChild(overlapCell);
+                
+                tableBody.appendChild(row);
+            });
+            
+            if (tableBody.children.length === 0) {
+                const row = document.createElement('tr');
+                const cell = document.createElement('td');
+                cell.colSpan = 6;
+                cell.className = 'no-matches';
+                cell.textContent = 'Nessuna partita trovata per i filtri selezionati';
+                row.appendChild(cell);
+                tableBody.appendChild(row);
+            }
+        }
+
+        // Populate calendar view
+        function populateCalendar(filterTeam = 'all', filterWeek = 'all') {
+            const weeklyData = organizeMatchesByWeek();
+            const container = document.getElementById('calendar-container');
+            container.innerHTML = '';
+            
+            const sortedWeeks = Object.keys(weeklyData).sort();
+            
+            sortedWeeks.forEach(weekId => {
+                if (filterWeek !== 'all' && filterWeek !== weekId) return;
+                
+                const weekData = weeklyData[weekId];
+                const weekRange = getWeekDateRange(weekId);
+                
+                // Filter matches by team
+                let filteredMatches = weekData.matches;
+                if (filterTeam !== 'all') {
+                    filteredMatches = weekData.matches.filter(m => getTeamKey(m.squadra) === filterTeam);
+                }
+                
+                if (filteredMatches.length === 0) return;
+                
+                const weekCard = document.createElement('div');
+                weekCard.className = 'week-card';
+                
+                const weekHeader = document.createElement('div');
+                weekHeader.className = 'week-header';
+                weekHeader.textContent = `${weekId} - ${weekRange.label}`;
+                weekCard.appendChild(weekHeader);
+                
+                const matchesGrid = document.createElement('div');
+                matchesGrid.className = 'matches-grid';
+                
+                filteredMatches.sort((a, b) => new Date(a.data) - new Date(b.data)).forEach(match => {
+                    const matchItem = document.createElement('div');
+                    const teamKey = getTeamKey(match.squadra);
+                    matchItem.className = `match-item ${teamKey}`;
+                    
+                    matchItem.innerHTML = `
+                        <div class="match-header">
+                            <span class="match-team">${match.squadra}</span>
+                            <span class="match-date">${new Date(match.data).toLocaleDateString('it-IT', { weekday: 'short', day: '2-digit', month: 'short' })} - ${match.ora}</span>
+                        </div>
+                        <div class="match-vs">${match.casa} vs ${match.ospite}</div>
+                        <div class="match-location">📍 ${match.campo}, ${match.localita}</div>
+                    `;
+                    
+                    matchesGrid.appendChild(matchItem);
+                });
+                
+                weekCard.appendChild(matchesGrid);
+                container.appendChild(weekCard);
+            });
+            
+            if (container.children.length === 0) {
+                container.innerHTML = '<div class="no-matches">Nessuna partita trovata per i filtri selezionati</div>';
+            }
+        }
+
+        // Initialize map
+        let map = null;
+        let markersLayer = null;
+
+        function initializeMap() {
+            if (!map) {
+                // Center map on Milan area
+                map = L.map('map').setView([45.5236, 9.2411], 10);
+                
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
+                    maxZoom: 19
+                }).addTo(map);
+                
+                markersLayer = L.layerGroup().addTo(map);
+            }
+        }
+
+        function populateMap(filterTeam = 'all', filterWeek = 'all') {
+            if (!map) {
+                initializeMap();
+            }
+            
+            markersLayer.clearLayers();
+            
+            // Group matches by location
+            const locationGroups = {};
+            
+            matchesData.forEach(match => {
+                const weekId = getWeekNumber(match.data);
+                const teamKey = getTeamKey(match.squadra);
+                
+                // Apply filters
+                if (filterTeam !== 'all' && teamKey !== filterTeam) return;
+                if (filterWeek !== 'all' && weekId !== filterWeek) return;
+                
+                const locKey = `${match.lat},${match.lng}`;
+                if (!locationGroups[locKey]) {
+                    locationGroups[locKey] = {
+                        lat: match.lat,
+                        lng: match.lng,
+                        campo: match.campo,
+                        localita: match.localita,
+                        matches: []
+                    };
+                }
+                locationGroups[locKey].matches.push(match);
+            });
+            
+            // Create markers
+            Object.values(locationGroups).forEach(location => {
+                // Determine marker color (use first match's team)
+                const teamKey = getTeamKey(location.matches[0].squadra);
+                const teamConfig = teams[teamKey];
+                
+                let iconHtml = '';
+                if (teamKey === 'avis') {
+                    iconHtml = '<div style="background-color: white; border: 3px solid #333; width: 25px; height: 25px; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.3);"></div>';
+                } else if (teamKey === 'zeronove') {
+                    iconHtml = '<div style="background-color: black; width: 25px; height: 25px; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.3);"></div>';
+                } else if (teamKey === 'carugate') {
+                    iconHtml = '<div style="background-color: #3b82f6; width: 25px; height: 25px; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.3);"></div>';
+                }
+                
+                const icon = L.divIcon({
+                    html: iconHtml,
+                    className: 'custom-marker',
+                    iconSize: [25, 25],
+                    iconAnchor: [12, 12]
+                });
+                
+                const marker = L.marker([location.lat, location.lng], { icon: icon });
+                
+                // Create popup content
+                let popupContent = `
+                    <div class="popup-content">
+                        <h3>${location.campo}</h3>
+                        <p><strong>${location.localita}</strong></p>
+                        <p><strong>Partite:</strong></p>
+                        <ul style="margin: 4px 0; padding-left: 20px;">
+                `;
+                
+                location.matches.forEach(match => {
+                    popupContent += `<li style="font-size: 12px; margin: 2px 0;">${match.squadra} - ${new Date(match.data).toLocaleDateString('it-IT')} ${match.ora}</li>`;
+                });
+                
+                popupContent += `
+                        </ul>
+                        <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.localita + ' ' + location.campo)}" target="_blank" class="popup-link">Apri in Google Maps</a>
+                    </div>
+                `;
+                
+                marker.bindPopup(popupContent);
+                marker.addTo(markersLayer);
+            });
+            
+            // Fit bounds if there are markers
+            if (Object.keys(locationGroups).length > 0) {
+                const bounds = L.latLngBounds(Object.values(locationGroups).map(loc => [loc.lat, loc.lng]));
+                map.fitBounds(bounds, { padding: [50, 50] });
+            }
+        }
+
+        // Populate week filter
+        function populateWeekFilter() {
+            const weekFilter = document.getElementById('week-filter');
+            const weeklyData = organizeMatchesByWeek();
+            const sortedWeeks = Object.keys(weeklyData).sort();
+            
+            sortedWeeks.forEach(weekId => {
+                const weekRange = getWeekDateRange(weekId);
+                const option = document.createElement('option');
+                option.value = weekId;
+                option.textContent = `${weekId} (${weekRange.label})`;
+                weekFilter.appendChild(option);
+            });
+        }
+
+        // View switching
+        const viewTabs = document.querySelectorAll('.view-tab');
+        const viewContents = document.querySelectorAll('.view-content');
+        
+        viewTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const viewName = tab.dataset.view;
+                
+                viewTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                viewContents.forEach(content => content.classList.remove('active'));
+                document.getElementById(`${viewName}-view`).classList.add('active');
+                
+                // Initialize map when map view is opened
+                if (viewName === 'map' && !map) {
+                    setTimeout(() => {
+                        const teamFilter = document.getElementById('team-filter').value;
+                        const weekFilter = document.getElementById('week-filter').value;
+                        populateMap(teamFilter, weekFilter);
+                    }, 100);
+                } else if (viewName === 'map' && map) {
+                    setTimeout(() => map.invalidateSize(), 100);
+                }
+            });
+        });
+
+        // Filter handling
+        document.getElementById('team-filter').addEventListener('change', (e) => {
+            const teamValue = e.target.value;
+            const weekValue = document.getElementById('week-filter').value;
+            
+            populateWeeklyTable(teamValue, weekValue);
+            populateCalendar(teamValue, weekValue);
+            if (map) {
+                populateMap(teamValue, weekValue);
+            }
+        });
+
+        document.getElementById('week-filter').addEventListener('change', (e) => {
+            const weekValue = e.target.value;
+            const teamValue = document.getElementById('team-filter').value;
+            
+            populateWeeklyTable(teamValue, weekValue);
+            populateCalendar(teamValue, weekValue);
+            if (map) {
+                populateMap(teamValue, weekValue);
+            }
+        });
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            populateWeekFilter();
+            populateWeeklyTable();
+            populateCalendar();
+        });
+    </script>
+</body>
+</html>

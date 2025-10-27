@@ -1,0 +1,912 @@
+[
+  {
+    "settimana": "2025-W44",
+    "partite": [
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2025-10-29",
+        "giorno": "Wednesday",
+        "ora": "21.00",
+        "casa": "CEM TORRICELLI",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "ITC VERRI 1 PIANO",
+        "localita": "MILANO - VIA LATTANZIO"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2025-10-30",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "O.F.I.",
+        "ospite": "ASD ZERONOVE",
+        "campo": "PALESTRA COMUNALE",
+        "localita": "INZAGO - VIA BRAMBILLA"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2025-10-31",
+        "giorno": "Friday",
+        "ora": "21.00",
+        "casa": "AD ASTRA ASD - DRACO",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "SCUOLA MEDIA BUONARROTI",
+        "localita": "MILANO - VIA SCIALOIA"
+      }
+    ]
+  },
+  {
+    "settimana": "2025-W45",
+    "partite": [
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2025-11-06",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "A.S.D. NEW VOLLEY ADDA",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2025-11-06",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "NUOVA UMPLA BRESSO",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2025-11-07",
+        "giorno": "Friday",
+        "ora": "21.00",
+        "casa": "GEAS VOLLEY ASD",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "SCUOLA EL. MARTIRI DELLA LIBERTA",
+        "localita": "SESTO SAN GIOVANNI - VIA FIORANI (DI FRONTE AL CIVICO 93)"
+      }
+    ]
+  },
+  {
+    "settimana": "2025-W46",
+    "partite": [
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2025-11-13",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "GEAS VOLLEY ASD",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2025-11-14",
+        "giorno": "Friday",
+        "ora": "21.00",
+        "casa": "BOLLATE VOLLEY",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "PALAZZETTO DELLO SPORT CARLO GALIMBERTI",
+        "localita": "BOLLATE - VIA VARALLI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2025-11-14",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POL. SAN GIORGIO",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "PALESTRA COMUNALE LISCATE",
+        "localita": "LISCATE - VIA DANTE ALIGHIERI"
+      }
+    ]
+  },
+  {
+    "settimana": "2025-W47",
+    "partite": [
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2025-11-20",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "A.S.D. POL. GS RODANO",
+        "ospite": "ASD ZERONOVE",
+        "campo": "PALAZZETTO COMUNALE C/O SM",
+        "localita": "RODANO - VIA TURATI (LARGO 11 SETTEMBRE 2001)"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2025-11-20",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "MARTESANA VOLLEY COLOGNO",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2025-11-21",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "GONZAGA YOUNG",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      }
+    ]
+  },
+  {
+    "settimana": "2025-W48",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2025-11-26",
+        "giorno": "Wednesday",
+        "ora": "21.15",
+        "casa": "BILLA VOLLEY MILANO U25",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "I.I.S. V.F. PARETO - CAMPO 1",
+        "localita": "MILANO - VIA LITTA MODIGNANI"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2025-11-27",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "SSD SRL POL. SAN GIULIANO",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2025-11-28",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "CITTA DI OPERA",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "PALESTRA COMUNALE OPERA",
+        "localita": "OPERA - VIA DANTE ALIGHIERI"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2025-11-28",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "VOLLEY LUCERNATE",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "S.E. DI LUCERNATE",
+        "localita": "RHO - LUCERNATE - VIA GIULIO CESARE - INGRESSO VIA VERBAN"
+      }
+    ]
+  },
+  {
+    "settimana": "2025-W49",
+    "partite": [
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2025-12-03",
+        "giorno": "Wednesday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "PIZZAUT PALLAVOLO CASSINA ROSSA",
+        "campo": "PALESTRA SCUOLE MEDIE CLEMENTE BARONI NUOVA",
+        "localita": "CARUGATE - VIA S. FRANCESCO D ASSISI (ANGOLO VIA FIDELINA)"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2025-12-04",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "A.S.D. ORATORIO OGGIONO",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2025-12-05",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "ASD ASS. GENITORI SCUOLE",
+        "ospite": "ASD ZERONOVE",
+        "campo": "SCUOLA MEDIA GRAMSCI",
+        "localita": "MILANO - VIA FRANCO TOSI"
+      }
+    ]
+  },
+  {
+    "settimana": "2025-W50",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2025-12-09",
+        "giorno": "Tuesday",
+        "ora": "21.15",
+        "casa": "VOLLEY BARZANO",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "CENTRO SPORTIVO PAOLO VI",
+        "localita": "BARZANO - VIA GIOVANNI PAOLO XXIII"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2025-12-11",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "ASD PGS ARDOR",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2025-12-11",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "O.F.I.",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "PALESTRA COMUNALE",
+        "localita": "INZAGO - VIA BRAMBILLA"
+      }
+    ]
+  },
+  {
+    "settimana": "2025-W51",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2025-12-16",
+        "giorno": "Tuesday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "PALLAVOLO GSA",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2025-12-17",
+        "giorno": "Wednesday",
+        "ora": "21.00",
+        "casa": "CEM TORRICELLI",
+        "ospite": "ASD ZERONOVE",
+        "campo": "CENTRO SCOLASTICO UNIONE EUROPEA",
+        "localita": "MILANO - VIA SAN DIONIGI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2025-12-19",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "A.S.D. NEW VOLLEY ADDA",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W02",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-01-09",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "CORALYA LISSONE VOLLEY TEAM",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "PALAZZETTO PIERMARINI",
+        "localita": "LISSONE - VIA BERNINI"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W03",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-01-15",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "REDSTAMP VOLLEY VALLE DEL LAMBRO",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-01-16",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POL. SAN GIORGIO",
+        "ospite": "ASD ZERONOVE",
+        "campo": "PALESTRA COMUNALE LISCATE",
+        "localita": "LISCATE - VIA DANTE ALIGHIERI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-01-16",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "A.S.D. POL. GS RODANO",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W04",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-01-22",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "UNION VOLLEY MARIANO",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "PALAZZETTO DELLO SPORT",
+        "localita": "MARIANO COMENSE - VIA SANT ANTONIO DA PADONA"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-01-22",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "GONZAGA YOUNG",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-01-23",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "SSD SRL POL. SAN GIULIANO",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "SCUOLA MEDIA E.FERMI",
+        "localita": "SAN GIULIANO MILANESE - VIA SESTO GALLO"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W05",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-01-29",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "BILLA VOLLEY MILANO U25",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-01-30",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "ASD ASS. GENITORI SCUOLE",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-01-30",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "CITTA DI OPERA",
+        "ospite": "ASD ZERONOVE",
+        "campo": "PALESTRA COMUNALE OPERA",
+        "localita": "OPERA - VIA DANTE ALIGHIERI"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W06",
+    "partite": [
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-02-05",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "PIZZAUT PALLAVOLO CASSINA ROSSA",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-02-06",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "GEAS VOLLEY ASD",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "ISTITUTO ERASMO DA ROTTERDAM",
+        "localita": "SESTO SAN GIOVANNI - VIA CANTORE (ANG.V.LE ITALIA 409)"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-02-06",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "ASD PGS ARDOR",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "CENTRO SALESIANO MELZO",
+        "localita": "MELZO - VIA FORMENTI"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W07",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-02-12",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "AD ASTRA ASD - DRACO",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-02-12",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "O.F.I.",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-02-13",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "CEM TORRICELLI",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W08",
+    "partite": [
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-02-19",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "A.S.D. NEW VOLLEY ADDA",
+        "ospite": "ASD ZERONOVE",
+        "campo": "PALAZZETTO SANSONA",
+        "localita": "CASSANO D ADDA - VIA PAPA GIOVANNI XXIII"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-02-20",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "GEAS VOLLEY ASD",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-02-20",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "NUOVA UMPLA BRESSO",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "TENSOSTRUTTURA BRESSO",
+        "localita": "BRESSO - VIA DON MINZONI"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W09",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-02-26",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "BOLLATE VOLLEY",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-02-27",
+        "giorno": "Friday",
+        "ora": "21.00",
+        "casa": "GEAS VOLLEY ASD",
+        "ospite": "ASD ZERONOVE",
+        "campo": "SCUOLA EL. MARTIRI DELLA LIBERTA",
+        "localita": "SESTO SAN GIOVANNI - VIA FIORANI (DI FRONTE AL CIVICO 93)"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-02-27",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "POL. SAN GIORGIO",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W10",
+    "partite": [
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-03-05",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "A.S.D. POL. GS RODANO",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-03-06",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "GONZAGA YOUNG",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "CENTRO SPORTIVO CRESPI",
+        "localita": "MILANO - VIA VALVASSORI PERONI"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-03-06",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "MARTESANA VOLLEY COLOGNO",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "PALAZZO SPORT",
+        "localita": "COLOGNO MONZESE - VIA VOLTA"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W11",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-03-12",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "VOLLEY LUCERNATE",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-03-13",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "SSD SRL POL. SAN GIULIANO",
+        "ospite": "ASD ZERONOVE",
+        "campo": "SCUOLA MEDIA E.FERMI",
+        "localita": "SAN GIULIANO MILANESE - VIA SESTO GALLO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-03-13",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "CITTA DI OPERA",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W12",
+    "partite": [
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-03-19",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "ASD ASS. GENITORI SCUOLE",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-03-20",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "PIZZAUT PALLAVOLO CASSINA ROSSA",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "SCUOLA ELEMENTARE TRENTO",
+        "localita": "CASSINA DE PECCHI - VIA TRENTO"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-03-20",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "A.S.D. ORATORIO OGGIONO",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "PALAZZETTO POLIFUNZIONALE ORATORIO",
+        "localita": "OGGIONO - VIALE VITTORIA"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W13",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-03-26",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "VOLLEY BARZANO",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-03-27",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "ASD PGS ARDOR",
+        "ospite": "ASD ZERONOVE",
+        "campo": "CENTRO SALESIANO MELZO",
+        "localita": "MELZO - VIA FORMENTI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-03-27",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "O.F.I.",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W14",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-04-02",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "PALLAVOLO GSA",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "ITIS LEONARDO DA VINCI",
+        "localita": "CARATE BRIANZA - VIA DE GASPERI"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-04-02",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "CEM TORRICELLI",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-04-02",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "A.S.D. NEW VOLLEY ADDA",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "PALAZZETTO SANSONA",
+        "localita": "CASSANO D ADDA - VIA PAPA GIOVANNI XXIII"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W15",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-04-09",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "CORALYA LISSONE VOLLEY TEAM",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-04-10",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "ASD ZERONOVE",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-04-10",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "ASD ZERONOVE",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W16",
+    "partite": [
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-04-16",
+        "giorno": "Thursday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "POL. SAN GIORGIO",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-04-16",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "A.S.D. POL. GS RODANO",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "PALAZZETTO COMUNALE C/O SM",
+        "localita": "RODANO - VIA TURATI (LARGO 11 SETTEMBRE 2001)"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-04-17",
+        "giorno": "Friday",
+        "ora": "21.00",
+        "casa": "REDSTAMP VOLLEY VALLE DEL LAMBRO",
+        "ospite": "AVIS CERNUSCO BIANCA",
+        "campo": "PALESTRA SCUOLA ELEMENTARE",
+        "localita": "CORREZZANA - VIA A. DE GASPERI"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W17",
+    "partite": [
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-04-23",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "UNION VOLLEY MARIANO",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-04-24",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "SSD SRL POL. SAN GIULIANO",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-04-24",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "GONZAGA YOUNG",
+        "ospite": "ASD ZERONOVE",
+        "campo": "CENTRO SPORTIVO CRESPI",
+        "localita": "MILANO - VIA VALVASSORI PERONI"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W18",
+    "partite": [
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-04-28",
+        "giorno": "Tuesday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "CITTA DI OPERA",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-04-29",
+        "giorno": "Wednesday",
+        "ora": "21.15",
+        "casa": "ASD ASS. GENITORI SCUOLE",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "SCUOLA MEDIA GRAMSCI",
+        "localita": "MILANO - VIA FRANCO TOSI"
+      }
+    ]
+  },
+  {
+    "settimana": "2026-W19",
+    "partite": [
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-05-05",
+        "giorno": "Tuesday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-05-05",
+        "giorno": "Tuesday",
+        "ora": "21.00",
+        "casa": "ASD ZERONOVE",
+        "ospite": "POLISPORTIVA CARUGATE",
+        "campo": "PALESTRA SCUOLA MEDIA LEOPARDI",
+        "localita": "SEGRATE - VIA SAN ROCCO"
+      },
+      {
+        "squadra": "Avis Cernusco",
+        "data": "2026-05-07",
+        "giorno": "Thursday",
+        "ora": "21.15",
+        "casa": "AVIS CERNUSCO BIANCA",
+        "ospite": "GEAS VOLLEY ASD",
+        "campo": "NUOVO PALASPORT COMUNALE - SUSSIDIARIA",
+        "localita": "CERNUSCO SUL NAVIGLIO - VIA BUONARROTI"
+      },
+      {
+        "squadra": "Polisportiva Carugate",
+        "data": "2026-05-08",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "POLISPORTIVA CARUGATE",
+        "ospite": "ASD PGS ARDOR",
+        "campo": "SCUOLA ELEMENTARE NUOVA",
+        "localita": "CARUGATE - VIA DEL GINESTRINO"
+      },
+      {
+        "squadra": "ASD Zeronove",
+        "data": "2026-05-08",
+        "giorno": "Friday",
+        "ora": "21.15",
+        "casa": "PIZZAUT PALLAVOLO CASSINA ROSSA",
+        "ospite": "ASD ZERONOVE",
+        "campo": "SCUOLA ELEMENTARE TRENTO",
+        "localita": "CASSINA DE PECCHI - VIA TRENTO"
+      }
+    ]
+  }
+]
